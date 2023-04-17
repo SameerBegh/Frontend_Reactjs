@@ -1,0 +1,32 @@
+.number ::-webkit-inner-spin-button,
+.number ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.footer_info{
+    display: flex;
+    background-color: #111;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+    padding: 11px;
+  }
+  
+  @media (max-width: 800px) {
+    .footer_info {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 508px) {
+    .footer_info {
+      display: block;
+      text-align: center;
+    }
+  }

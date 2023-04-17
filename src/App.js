@@ -1,9 +1,12 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Create_tournament from "./Components/Create_tournament";
+import Addtournament from "./Components/Addtournament";
 import Navbar from "./Components/Navbar";
 import Detail from "./Components/Detail";
 import DataProvider from "./Components/Context/Context";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function App() {
   return (
@@ -11,10 +14,12 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Create_tournament />} />
+          <Route path="/" exact element={<Addtournament/>} />
           <Route path="/Tournament/:id" element={<Detail />} />
         </Routes>
+
       </div>
+      <ToastContainer />
     </DataProvider>
   );
 }
